@@ -5,34 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/styles-register.css">
-    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles-header.css">
+    <link rel="stylesheet" href="css/styles-footer.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" />
+
     <title>Coffe&Books</title>
 </head>
 
 <body>
-    <header>
-        <div class="titulo">
-            <h1>Coffe & Books</h1>
-        </div>
-        <div class="left-side">
-            <a href="/">INICIO</a>
-            <a href="#offers">LIBROS</a>
-        </div>
-        <div class="logo-header">
-            <img src="Images/Logo.png" alt="Logo">
-        </div>
-        <div class="right-side">
-            <a href="/login" class="account">INICIAR SESION</a>
-            <a href="/register" class="account">REGISTRARSE</a>
-            <a href="/productCart" class="cart"><i class="fa fa-shopping-cart"></i></a>
-        </div>
-        <div class="burger-menu">
-            <i class="fa fa-bars burger"></i>
-        </div>
-    </header>
+    
+    <%- include('partials/mainHeader') %>
 
     <main>
         <div class="box-formulario">
@@ -59,8 +46,8 @@
                                 placeholder="Repita su contraseña" class="inputs" minlength="6" required />
                         </div>
                         <a href="/login"><button class="btn-Iniciar" type="submit">
-                            Registrarse
-                        </button></a>
+                                Registrarse
+                            </button></a>
 
                         <button class="btn-Iniciar" type="reset">
                             Borrar
