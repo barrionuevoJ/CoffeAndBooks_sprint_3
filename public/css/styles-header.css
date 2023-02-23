@@ -3,14 +3,62 @@ header {
     background-color: #a6d5eb;
 }
 
+header div.left-side {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+header div.mid-side {
+    display: flex;
+}
+
+header div.mid-side form {
+    display: flex;
+    width: 100%;
+}
+
+header div.mid-side form input {
+    width: 100%;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+}
+
+header div.mid-side form button {
+    border: none;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+}
+
 @media (min-width: 361px) {
     header {
         justify-content: space-between;
         align-items: center;
     }
 
-    header div.left-side {
+    header div.left-side a {
         display: none;
+    }
+
+    header div.left-side a.logo {
+        display: block;
+    }
+
+    header div.left-side img {
+        width: 75%;
+    }
+
+    header div.mid-side {
+        flex: 2;
+    }
+
+    header div.mid-side form input {
+        padding: 5%;
+    }
+
+    header div.mid-side form button {
+        padding: 5%;
     }
 
     header div.right-side {
@@ -27,10 +75,6 @@ header {
         flex: 1;
     }
 
-    header div.left-side img {
-        width: 100%;
-    }
-
     header h1 {
         padding-left: 4vw;
         font-size: 1.6em;
@@ -38,7 +82,7 @@ header {
 
     header div.burger-menu {
         display: flex;
-        flex: 2;
+        flex: 1;
         justify-content: flex-end;
         text-align: center;
     }
@@ -70,51 +114,46 @@ header {
         display: none;
     }
 
-    header div.left-side img {
+    header div.left-side {
+        justify-content: initial;
+    }
+
+    header div.left-side a.logo {
         width: 15%;
     }
 
-    header div.left-side {
-        display: flex;
-        flex: 1;
-        align-items: center;
+    header div.left-side a.logo img {
+        width: 100%;
+    }
+
+    header div.left-side a {
+        display: block;
+    }
+
+    header div.left-side a.home:hover,
+    header div.left-side a.books:hover {
+        border-bottom: 1px solid rgb(7, 107, 124);
+        color: black;
     }
 
     header div.mid-side {
-        display: flex;
         flex: 1;
     }
 
-    header div.mid-side form {
-        display: flex;
-        width: 100%;
-    }
-
     header div.mid-side form input {
-        width: 100%;
         padding: 2%;
-        border: none;
-        border-radius: 10px 0 0 10px;
-        outline: none;
     }
 
     header div.mid-side form button {
-        border: none;
         padding: 2%;
-        border-radius: 0 10px 10px 0;
-        cursor: pointer;
     }
 
     header div.right-side a.account,
     header div.right-side a.cart,
-    header div.left-side a {
+    header div.left-side a.home,
+    header div.left-side a.books {
         margin: 0 2vw;
         text-decoration: none;
-        color: black;
-    }
-
-    header div.left-side a:hover {
-        border-bottom: 1px solid rgb(7, 107, 124);
         color: black;
     }
 
