@@ -50,9 +50,15 @@ const controlador = {
         res.render('productCart');
     },
 
-    productDetail: (req, res) => {
-        res.render('productDetail');
+
+    productDetail: (req,res) => {
+        res.render('productDetail')
     },
+    
+    // productDetail: (req, res) => {
+    //     let libro = productosMasVendidos.find(libro => libro.id == req.params.libroId);
+    //     res.render("productDetail", { libro: libro });
+    // },
 }
 
 module.exports = controlador;
