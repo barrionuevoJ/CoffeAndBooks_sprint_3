@@ -28,26 +28,20 @@
                     
                     <div class="info">
                         <div class="image">
-                            <img src="Images/They-Both-Die-At-The-End.jpg" alt="productImg">
+                            <img src="/Images/<%= libro.img %>" alt="productImg">
                         </div>
 
                         <div class="descripcion">
                             <h1 style="text-align: center; font-size: 1.8em;"><%= libro.titulo %></h1>
                             <div class="genre">
-                                <span>"Novela Juvenil, romance, aventura"</span>
+                                <span><%= libro.genre %></span>
                             </div>
                             <h3>Descripción:</h3>
                             <span>
-                                "¿Puede un solo día albergar toda una vida? En un presente alternativo, en el que es
-                                posible
-                                predecir la muerte con un plazo de veinticuatro horas, Mateo Torrez y Rufus Emeterio
-                                acaban
-                                de
-                                recibir la llamada más temida: la misma que te avisa de que ha llegado tu hora
-                                final."
+                                <%= libro.descripcion %>
                             </span>
                             <div class="prices">
-                                <h3>Precio: $2.500</h3>
+                                <h3>Precio: $<%= libro.precio %></h3>
                                 <h3>Envio: $500</h3>
                             </div>
                             <form action="/productCart" method="post">
