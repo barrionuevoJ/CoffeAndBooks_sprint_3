@@ -6,8 +6,6 @@ router.get('/', mainController.index);
 
 router.get('/productCart', mainController.productCart);
 
-router.get('/productDetail', mainController.productDetail);
-
-// router.get('/productDetail/:libroId/', mainController.productDetail);
+router.get('/productDetail/:libroId/', mainController.productDetail);
 
 module.exports = router;

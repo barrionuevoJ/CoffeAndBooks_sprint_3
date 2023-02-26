@@ -49,16 +49,11 @@ const controlador = {
     productCart: (req, res) => {
         res.render('productCart');
     },
-
-
-    productDetail: (req,res) => {
-        res.render('productDetail')
-    },
     
-    // productDetail: (req, res) => {
-    //     let libro = productosMasVendidos.find(libro => libro.id == req.params.libroId);
-    //     res.render("productDetail", { libro: libro });
-    // },
+    productDetail: (req, res) => {
+        let libro = productosMasVendidos.find(libro => libro.id == req.params.libroId);
+        res.render("productDetail", { libro: libro });
+    },
 }
 
 module.exports = controlador;

@@ -25,13 +25,14 @@
         <section class="product-detail">
             <article>
                 <div class="product">
-                    <h1>They both die in the end</h1>
+                    
                     <div class="info">
                         <div class="image">
                             <img src="Images/They-Both-Die-At-The-End.jpg" alt="productImg">
                         </div>
 
                         <div class="descripcion">
+                            <h1 style="text-align: center; font-size: 1.8em;"><%= libro.titulo %></h1>
                             <div class="genre">
                                 <span>"Novela Juvenil, romance, aventura"</span>
                             </div>
@@ -49,9 +50,9 @@
                                 <h3>Precio: $2.500</h3>
                                 <h3>Envio: $500</h3>
                             </div>
-                            <div class="cart">
-                                <h1>Añadir al carrito</h1>
-                            </div>
+                            <form action="/productCart" method="post">
+                                <button type="submit">Añadir al carrito</button>
+                            </form>
                         </div>
                     </div>
                 </div>
