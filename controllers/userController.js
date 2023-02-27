@@ -6,6 +6,10 @@ const controlador = {
     register: (req, res) => {
         res.render('register', {});
     },
+
+    formCyE: (req,res) => {
+        res.render('formCyE', {})
+    }
 }
 
 module.exports = controlador;
