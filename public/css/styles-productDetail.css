@@ -67,6 +67,11 @@ section.product-detail form button{
   outline: none;
   border: none;
   font-size: 1.5em;
+  cursor: pointer;
+}
+
+section.product-detail form button:hover {
+  background-color: rgb(167, 177, 217);
 }
 
 @media (min-width: 769px) {

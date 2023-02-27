@@ -27,7 +27,7 @@
 
                     <% productos.forEach(libro=> { %>
                         <article>
-                            <img src="Images/<%= libro.img %>">
+                            <img src="/Images/<%= libro.img %>">
                             <div class="main-article">
                                 <h4 class="title">
                                     <%= libro.titulo %>
@@ -48,45 +48,24 @@
             <section class="ofertas" id="ofertas">
                 <h2>Ofertas imperdibles</h2>
                 <div class="productos">
-                    <article>
-                        <img src="Images/They-Both-Die-At-The-End.jpg">
-                        <div class="main-article">
-                            <h4 class="title">They both die at the end</h4>
-                            <h5 class="author">Adam Silvera</h5>
-                            <p class="price">$6.770</p>
-                        </div>
-                        <a href="/productDetail"><button class="btn-compra"> Comprar </button></a>
-                    </article>
 
-                    <article>
-                        <img src="Images/They-Both-Die-At-The-End.jpg">
-                        <div class="main-article">
-                            <h4 class="title">They both die at the end</h4>
-                            <h5 class="author">Adam Silvera</h5>
-                            <p class="price">$6.770</p>
-                        </div>
-                        <a href="/productDetail"><button class="btn-compra"> Comprar </button></a>
-                    </article>
-
-                    <article>
-                        <img src="Images/They-Both-Die-At-The-End.jpg">
-                        <div class="main-article">
-                            <h4 class="title">They both die at the end</h4>
-                            <h5 class="author">Adam Silvera</h5>
-                            <p class="price">$6.770</p>
-                        </div>
-                        <a href="/productDetail"><button class="btn-compra"> Comprar </button></a>
-                    </article>
-
-                    <article>
-                        <img src="Images/They-Both-Die-At-The-End.jpg">
-                        <div class="main-article">
-                            <h4 class="title">They both die at the end</h4>
-                            <h5 class="author">Adam Silvera</h5>
-                            <p class="price">$6.770</p>
-                        </div>
-                        <a href="/productDetail"><button class="btn-compra"> Comprar </button></a>
-                    </article>
+                    <% ofertas.forEach(libro=> { %>
+                        <article>
+                            <img src="/Images/<%= libro.img %>">
+                            <div class="main-article">
+                                <h4 class="title">
+                                    <%= libro.titulo %>
+                                </h4>
+                                <h5 class="author">
+                                    <%= libro.autor %>
+                                </h5>
+                                <p class="price">
+                                   $ <%= libro.precio %>
+                                </p>
+                            </div>
+                            <a href="/productDetail/<%= libro.id %>"><button class="btn-compra"> Comprar </button></a>
+                        </article>
+                        <% }); %>
                 </div>
             </section>
 
