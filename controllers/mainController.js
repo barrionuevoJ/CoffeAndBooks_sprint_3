@@ -129,21 +129,13 @@ const controlador = {
         res.render('index', { productos: productosMasVendidos, ofertas: ofertas, interes: interes});
     },
 
-    login: (req, res) => {
-        res.render('login');
-    },
-
-    register: (req, res) => {
-        res.render('register');
-    },
-
     productCart: (req, res) => {
-        res.render('productCart');
+        res.render('productCart', {});
     },
 
     productDetail: (req, res) => {
         let libro = listaLibros.find(libro => libro.id == req.params.libroId);
-        res.render("productDetail", { libro: listaLibros });
+        res.render("productDetail", { libro: libro });
     },
 }
 

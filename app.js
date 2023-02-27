@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const path = require('path')
+const path = require('path');
 
 const port = 3030;
 
@@ -10,9 +10,10 @@ app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs');
 
 
-const mainRutas = require('./routers/main');
-const usersRutas = require('./routers/users');
+const mainRoutes = require('./routers/main');
+const usersRoutes = require('./routers/users');
 
-app.use('/', mainRutas, usersRutas);
+app.use('/', mainRoutes);
+app.use('/', usersRoutes);
 
 app.listen(port, () => console.log(`Servidor funcionando en el puerto ${port}!`));
