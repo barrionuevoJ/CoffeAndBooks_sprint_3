@@ -74,6 +74,10 @@ section.product-detail form button:hover {
   background-color: rgb(167, 177, 217);
 }
 
+section.product-detail div.info {
+  background-color: #ffffff7d;
+}
+
 @media (min-width: 769px) {
   section.product-detail div.image {
     width: 20vw;
@@ -97,19 +101,6 @@ section.product-detail form button:hover {
     align-items: center;
   }
 
-  /* section.product-detail div.product h1 {
-    font-size: 2em;
-  } */
-
-  /* section.product-detail div.genre {
-    display: flex;
-    justify-content: center;
-    margin-top: -22%;
-    margin-left: 38%;
-    margin-bottom: 2%;
-    margin-right: 38%;
-  } */
-
   section.product-detail div.descripcion {
     display: flex;
     flex-direction: column;
@@ -127,14 +118,6 @@ section.product-detail form button:hover {
     margin-right: 20%;
     background-color: aliceblue;
   }
-
-  /* section.product-detail div.prices {
-    display: flex;
-    justify-content: space-around;
-    font-size: 150%;
-    margin-left: 25%;
-    margin-right: 7%;
-  } */
 
   section.product-detail div.cart {
     font-size: 1em;
