@@ -97,7 +97,7 @@ const interes = [
         autor: 'J.K Rolling',
         descripcion: 'Pibito con lentes escapando de un pelado sin nariz 2',
         precio: '10.995',
-        img: 'Harry-Potter-ATSS.jpg',
+        img: 'Harry-Potter-ATSS.png',
         genre: 'Fantasia'
     },
 
