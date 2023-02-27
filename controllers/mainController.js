@@ -37,52 +37,96 @@ const productosMasVendidos = [
     }
 ]
 
-    const ofertas = [
-        {
-            id: 5, 
-            titulo: 'Mo Dao Zu Shi',
-            autor: 'Mo Xiang Tong Xiu',
-            descripcion: 'Después de revivir en el cuerpo de una persona llamada Mo Xuanyu, Wei Wuxian se reencuentra con un viejo conocido con el cual deberá resolver un misterio que probablemente está cubriendo algo mayor…',
-            precio: '9.764',
-            img: 'Mo-Dao-Zu-Shi-Third-Tome.jpg',
-            genre: 'Wuxia, BL, adventure'
-        },
+const ofertas = [
+    {
+        id: 5,
+        titulo: 'Mo Dao Zu Shi',
+        autor: 'Mo Xiang Tong Xiu',
+        descripcion: 'Después de revivir en el cuerpo de una persona llamada Mo Xuanyu, Wei Wuxian se reencuentra con un viejo conocido con el cual deberá resolver un misterio que probablemente está cubriendo algo mayor…',
+        precio: '9.764',
+        img: 'Mo-Dao-Zu-Shi-Third-Tome.jpg',
+        genre: 'Wuxia, BL, adventure'
+    },
 
-        {
-            id: 6,
-            titulo: 'Tian Guan Ci Fu',
-            autor: 'Mo Xiang Tong Xiu',
-            descripcion: 'Su Alteza el Príncipe Heredero ha vuelto a ascender al cielo, pero esta vez no tiene ni a los seguidores ni a ningún incienso quemado a su nombre. Un día, en su camino a su hogar se encuentra con un jovén misterioso a quien le ofrece un lugar para dormir. Sin embargo, este misterioso jovén resulta ser nada más ni nada menos que el Rey Fantasma: Hua Cheng.',
-            precio: '12.500',
-            img: 'Tian-Guan-Ci-Fu-Forth-Tome.jpg',
-            genre: 'Xianxia'
-        },
+    {
+        id: 6,
+        titulo: 'Tian Guan Ci Fu',
+        autor: 'Mo Xiang Tong Xiu',
+        descripcion: 'Su Alteza el Príncipe Heredero ha vuelto a ascender al cielo, pero esta vez no tiene ni a los seguidores ni a ningún incienso quemado a su nombre. Un día, en su camino a su hogar se encuentra con un jovén misterioso a quien le ofrece un lugar para dormir. Sin embargo, este misterioso jovén resulta ser nada más ni nada menos que el Rey Fantasma: Hua Cheng.',
+        precio: '12.500',
+        img: 'Tian-Guan-Ci-Fu-Forth-Tome.jpg',
+        genre: 'Xianxia'
+    },
 
-        {
-            id: 7,
-            titulo: 'Batman Detective Comics',
-            autor: 'DC',
-            descripcion: 'Pensaron que la Liga de las Sombras era solo un rumor: una sociedad secreta de asesinos nihilistas, a menudo susurrados pero nunca vistos. Pero ahora la Liga está aquí, en Gotham. Están destruyendo al equipo de Batman, uno por uno. Y su siniestra líder, Lady Shiva, ha venido a reclamar a su hija… o a destruirla',
-            precio: '4.550',
-            img: 'Batam-Detective-Comics.jpg',
-            genre: 'Comic'
-        },
+    {
+        id: 7,
+        titulo: 'Batman Detective Comics',
+        autor: 'DC',
+        descripcion: 'Pensaron que la Liga de las Sombras era solo un rumor: una sociedad secreta de asesinos nihilistas, a menudo susurrados pero nunca vistos. Pero ahora la Liga está aquí, en Gotham. Están destruyendo al equipo de Batman, uno por uno. Y su siniestra líder, Lady Shiva, ha venido a reclamar a su hija… o a destruirla',
+        precio: '4.550',
+        img: 'Batam-Detective-Comics.jpg',
+        genre: 'Comic'
+    },
 
-        {
-            id: 8,
-            titulo: 'Twisted Wonderland The Novel "Chapter one: Red Roses Tyrant"',
-            autor: 'Toboso Yana (Ilustrations) & Jun Hioki',
-            descripcion: 'Novela basada en el prologo y primer capitulo del Famoso juego Twisted Wonderland. Luego de despertar en un extraño mundo conocido como Twisted Wonderland, Kuroki Yuuya se encuentra envuelto en una peligrosa situación, sin forma de volver a su hogar y rodeado de personas que tienen la habilidad de usar magia, siendo el un humano común y corriente.',
-            precio: '15.200',
-            img: 'Twisted-Wonderland-The-Novel.jpg',
-            genre: 'Novela juvenil'
-        }
+    {
+        id: 8,
+        titulo: 'Twisted Wonderland The Novel "Chapter one: Red Roses Tyrant"',
+        autor: 'Toboso Yana (Ilustrations) & Jun Hioki',
+        descripcion: 'Novela basada en el prologo y primer capitulo del Famoso juego Twisted Wonderland. Luego de despertar en un extraño mundo conocido como Twisted Wonderland, Kuroki Yuuya se encuentra envuelto en una peligrosa situación, sin forma de volver a su hogar y rodeado de personas que tienen la habilidad de usar magia, siendo el un humano común y corriente.',
+        precio: '15.200',
+        img: 'Twisted-Wonderland-The-Novel.jpg',
+        genre: 'Novela juvenil'
+    }
 
-    ]
+]
+
+const interes = [
+    {
+        id: 9,
+        titulo: 'Harry Potter And The Philosopher Stone',
+        autor: 'J.K Rolling',
+        descripcion: 'Pibito con lentes escapando de un pelado sin nariz',
+        precio: '6.880',
+        img: 'Harry-Potter-ATPS.jpg',
+        genre: 'Fantasia'
+    },
+
+    {
+        id: 10,
+        titulo: 'Harry Potter And The Sourcerers Stone',
+        autor: 'J.K Rolling',
+        descripcion: 'Pibito con lentes escapando de un pelado sin nariz 2',
+        precio: '10.995',
+        img: 'Harry-Potter-ATSS.jpg',
+        genre: 'Fantasia'
+    },
+
+    {
+        id: 11,
+        titulo: 'Fifty Shadows of grey',
+        autor: 'E. L. James',
+        descripcion: 'Cuando la estudiante de literatura Anastasia Steele recibe el encargo de entrevistar al exitoso y joven empresario Christian Grey, queda impresionada al encontrarse ante un hombre atractivo, seductor y también muy intimidante. La inexperta e inocente Ana intenta olvidarle, pero pronto comprende cuánto le desea. Grey está atormentado por sus propios demonios y le consume la necesidad de controlarlo todo, pero a su vez se ve incapaz de resistirse a la serena belleza de Ana, a su inteligencia y a su espíritu independiente. Debe admitir que la desea, pero bajo ciertas condiciones. Cuando la pareja por fin inicia una apasionada relación, las peculiares prácticas eróticas de Grey desconciertan a Ana, al tiempo que ella descubre los límites de sus propios y más oscuros deseos...',
+        precio: '4.179',
+        img: 'Fifty-Shadows-of-Grey.jpg',
+        genre: 'Erotic romance novel, romance, fiction'
+    },
+
+    {
+        id: 12,
+        titulo: 'Pride And Prejudice',
+        autor: 'Jane Austen',
+        descripcion: 'Con la llegada del rico y apuesto Mr. Darcy a su región, las vidas de los Bennet y sus cinco hijas se vuelven del revés. El orgullo y la distancia social, la astucia y la hipocresía, los malentendidos y los juicios apresurados abocan a sus personajes al escándalo y al dolor, pero también a la comprensión, el conocimiento y el amor verdadero. Esta edición presenta al lector una nueva traducción al castellano que devuelve todo su esplendor al ingenio y la finísima ironía de la prosa de Austen. Satírica, antirromántica, profunda y mordaz a un tiempo, la obra de Jane Austen nace de la observación de la vida doméstica y de un profundo conocimiento de la condición humana.',
+        precio: '3.240',
+        img: 'Pride-and-Prejudice.jpg',
+        genre: 'literatura y ficción, romance'
+    }
+]
+
+const listaLibros = productosMasVendidos.concat(ofertas, interes);
 
 const controlador = {
     index: (req, res) => {
-        res.render('index', { productos: productosMasVendidos, ofertas: ofertas });
+        res.render('index', { productos: productosMasVendidos, ofertas: ofertas, interes: interes});
     },
 
     login: (req, res) => {
@@ -96,11 +140,10 @@ const controlador = {
     productCart: (req, res) => {
         res.render('productCart');
     },
-    
+
     productDetail: (req, res) => {
-        let libro = productosMasVendidos.find(libro => libro.id == req.params.libroId);
-        let libroOfertas = ofertas.find(libro => libro.id == req.params.libroId);
-        res.render("productDetail", { libro: libro, libro: libroOfertas });
+        let libro = listaLibros.find(libro => libro.id == req.params.libroId);
+        res.render("productDetail", { libro: listaLibros });
     },
 }
 
