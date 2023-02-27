@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles-productList.css">
     <link rel="stylesheet" href="css/styles-header.css">
     <link rel="stylesheet" href="css/styles-footer.css">
 
@@ -22,7 +23,29 @@
     <%- include('partials/mainHeader') %>
 
         <main class="listadoProductos">
-
+            <section>
+                <% lista.forEach(libro=> { %>
+                    <article>
+                        <img src="/Images/<%= libro.img %>">
+                        <h1>
+                            Titulo: <%= libro.titulo%>
+                        </h1>
+                        <h4>
+                            Autor: <%= libro.autor%>
+                        </h4>
+                        <div class="detalles">
+                            <p>
+                                Genero: <%= libro.genre %>
+                            </p>
+                            <p>
+                                Descripción: <%= libro.descripcion %>
+                            </p>
+                            <p>Precio: $ <%= libro.precio %>
+                        </div>
+                        </p>
+                    </article>
+                    <% }); %>
+            </section>
         </main>
 
         <%- include('partials/mainFooter') %>
