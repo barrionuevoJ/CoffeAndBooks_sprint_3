@@ -96,6 +96,7 @@ section.product-detail article.product {
     width: 30%;
     margin: 20px 0;
     justify-content: space-evenly;
+    letter-spacing: 1px;
   }
 
   section.product-detail div.description {
