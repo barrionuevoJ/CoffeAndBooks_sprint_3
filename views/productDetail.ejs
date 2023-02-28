@@ -20,42 +20,42 @@
 <body>
 
     <%- include('partials/mainHeader') %>
-    
-    <main>
-        <section class="product-detail">
-            <article>
-                <div class="product">
-                    
-                    <div class="info">
-                        <div class="image">
-                            <img src="/Images/<%= libro.img %>" alt="productImg">
-                        </div>
 
-                        <div class="descripcion">
-                            <h1 style="text-align: center; font-size: 1.8em;"><%= libro.titulo %></h1>
-                            <div class="genre">
-                                <span><%= libro.genre %></span>
-                            </div>
-                            <h3>Descripción:</h3>
-                            <span>
-                                <%= libro.descripcion %>
-                            </span>
-                            <div class="prices">
-                                <h3>Precio: $<%= libro.precio %></h3>
-                                <h3>Envio: $500</h3>
-                            </div>
-                            <form action="/productCart" method="post">
-                                <button type="submit">Añadir al carrito</button>
-                            </form>
-                        </div>
+        <main>
+            <section class="product-detail">
+                <article class="product">
+                    <div class="image">
+                        <img src="/Images/<%= libro.img %>" alt="productImg">
                     </div>
-                </div>
-            </article>
-        </section>
-    </main>
-    
-    <%- include('partials/mainFooter') %>
-    
+
+                    <div class="descripcion">
+                        <h1 style="text-align: center; font-size: 1.8em;">
+                            <%= libro.titulo %>
+                        </h1>
+                        <div class="genre">
+                            <span>
+                                <%= libro.genre %>
+                            </span>
+                        </div>
+                        <h3>Descripción:</h3>
+                        <span>
+                            <%= libro.descripcion %>
+                        </span>
+                        <div class="prices">
+                            <h3>Precio: $<%= libro.precio %>
+                            </h3>
+                            <h3>Envio: $500</h3>
+                        </div>
+                        <form action="/productCart" method="post">
+                            <button type="submit">Añadir al carrito</button>
+                        </form>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <%- include('partials/mainFooter') %>
+
 </body>
 
 </html>
