@@ -130,7 +130,7 @@ const controlador = {
     },
 
     productCart: (req, res) => {
-        res.render('productCart', {});
+        res.render('productCart', { carrito: interes});
     },
 
     productDetail: (req, res) => {

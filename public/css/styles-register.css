@@ -20,13 +20,13 @@ main.registerForm section.form form {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 50%;
-  height: 90%;
   border-radius: 20px;
   gap: 20px;
-  padding: 50px;
-  background-color: #ffffffd4;
-  box-shadow: 0 0 10px 5px rgb(0 0 0 / 52%);
+  padding: 30px;
+  height: 85%;
+  background-color: #709ce1e8;
+  margin: 50px 0;
+  box-shadow: 0 0 10px 5px rgb(0 0 0 / 25%);
 }
 
 main.registerForm section.form form>div {
@@ -62,7 +62,7 @@ main.registerForm section.form form label {
 
 
 main.registerForm section.form form div.input-user,
-main.registerForm section.form form div.input-pass{
+main.registerForm section.form form div.input-pass {
   flex: 2;
 }
 
@@ -123,4 +123,28 @@ main.registerForm .check input {
 main.registerForm div.input {
   margin: 0 20px;
   flex: 1;
+}
+
+@media (min-width: 369px) {
+  main.registerForm section.form form {
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) {
+  main.registerForm section.form form {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1024px) {
+  main.registerForm section.form form {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1280px) {
+  main.registerForm section.form form {
+    width: 50%;
+  }
 }
