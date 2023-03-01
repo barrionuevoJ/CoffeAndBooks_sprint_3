@@ -139,7 +139,7 @@ const controlador = {
     },
 
     productList: (req,res) => {
-        res.render('productList', {})
+        res.render('productList', {lista: listaLibros})
     },
 }
 

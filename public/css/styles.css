@@ -21,22 +21,13 @@ main {
 main.home section.ofertas,
 main.home section.masVendidos,
 main.home section.interes {
+    margin: 7vh 0;
     text-align: center;
     display: flex;
     flex-direction: column;
     border-radius: 30px;
-}
-
-main.home section.masVendidos {
-    margin: 7vh 0 3vh 0;
-}
-
-main.home section.ofertas {
-    margin: 3vh 0;
-}
-
-main.home section.interes {
-    margin: 3vh 0;
+    background-color: #ffffff7d;
+    box-shadow: 0 0 10px 5px rgb(0 0 0 / 52%)
 }
 
 main.home section div.productos {
@@ -51,11 +42,11 @@ main.home section h3 {
     margin: 20px 0px;
 }
 
-article div.main-article {
+main.home article div.main-article {
     padding: 15px;
 }
 
-section div.productos div.main-article p {
+main.home section div.productos div.main-article p {
     margin-top: 10px;
 }
 
@@ -68,6 +59,10 @@ main.home section article button.btn-compra {
     box-shadow: 0 5px 10px rgb(0 0 0 / 52%);
     background-color: #a6d5eb;
     cursor: pointer;
+}
+
+main.home section article button.btn-compra:hover {
+    background-color: #87b9d1;
 }
 
 @media (min-width: 361px) {
@@ -110,7 +105,7 @@ main.home section article button.btn-compra {
         height: 45vh;
     }
 
-    article div.main-article {
+    main.home section article div.main-article {
         width: 20vw;
     }
 
@@ -120,9 +115,5 @@ main.home section article button.btn-compra {
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: flex-start;
-    }
-
-    main.home section article button.btn-compra:hover {
-        background-color: #87b9d1;
     }
 }

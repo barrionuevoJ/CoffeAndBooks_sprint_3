@@ -4,10 +4,6 @@ section.product-detail {
   font-style: normal;
 }
 
-section.product-detail article {
-  background-size: 50%;
-}
-
 section.product-detail div.title {
   display: flex;
   justify-content: center;
@@ -74,7 +70,7 @@ section.product-detail form button:hover {
   background-color: rgb(167, 177, 217);
 }
 
-section.product-detail div.info {
+section.product-detail article.product {
   background-color: #ffffff7d;
 }
 
@@ -88,17 +84,10 @@ section.product-detail div.info {
     width: 100%;
   }
 
-  section.product-detail div.info {
+  section.product-detail article.product{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-
-  section.product-detail div.product{
-    display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 
   section.product-detail div.descripcion {
@@ -107,6 +96,7 @@ section.product-detail div.info {
     width: 30%;
     margin: 20px 0;
     justify-content: space-evenly;
+    letter-spacing: 1px;
   }
 
   section.product-detail div.description {
