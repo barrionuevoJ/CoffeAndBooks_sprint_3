@@ -137,6 +137,10 @@ const controlador = {
         let libro = listaLibros.find(libro => libro.id == req.params.libroId);
         res.render("productDetail", { libro: libro });
     },
+
+    productList: (req,res) => {
+        res.render('productList', {})
+    },
 }
 
 module.exports = controlador;
